@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');
+@import url('https://fonts.googleapis.com/css?family=Poiret+One|Raleway');
+@import url('https://fonts.googleapis.com/css?family=Acme|Poiret+One|Questrial');
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+header{
+    height: 50px;
+    width: 90%;
+    margin: auto;
+     display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 120%;
+    color: white;
+}
+.titulot{
+    font-family: 'Pacifico', cursive;
+    font-size: 30px;
+    text-shadow: 0 0 5px black;
+}
+.obsion{
+    display: -ms-flexbox;
+    display: flex;
+    flex-flow: row wrap;
+}
+.obsion a {
+    font-family: 'Poiret One', cursive;
+    border-bottom: 1px solid black;
+    margin: 0 10px;
+    padding: 5px 15px;
+       color: white;
+    text-decoration: none;
+   
+}
+.obsion a:hover{
+     background: rgba(0,0,0,0.4);
+}
+
+.f-foto{
+    position: relative;
+    color: red;
+    width: 90%;
+    height: 200px;
+    margin: auto;
+    
+}
+/*section info*/
+section.info{
+    position: relative;
+    color: black;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-flow: row wrap;
+    width: 80%;
+    align-items: center;
+    margin: auto;
+}
+.info-text{
+    
+    width: 45%;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+.info-text p{
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+.info-text h2{
+    font-family: 'Poiret One', cursive;
+    padding: 15px;
+}
+.info-img{
+    margin: 0 25px;
+    width: 50%;
+}
+
+/*-----------CONTENIDO DEL BANER.------------*/
+img{
+    display: block;
+    width: 100%;
+}
+.banner{
+    top: -50px;
+    z-index: -11;
+    position: relative;
+}
+.sombra{
+    top: 0;
+    position: absolute;
+    background: rgba(0,0,0,0.12);
+    width: 100%;
+    height: 100%;
+}
+/*barra  de fotos*/
+.lugares{
+    font-family: 'Poiret One', cursive;
+    margin-top: -50px;
+    width: 100%;
+    height: 50px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-flow: row wrap;
+    
+}
+
+
+.camara{
+    
+    width: 25%;
+    min-width: 300px;
+    position: relative;
+}
+
+.texto{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+.texto a{
+    font-family: 'Poiret One', cursive;
+    padding: 4px 9px;
+    border: 3px solid #1ABC9C;
+    transition: opacity 0.9s;
+    z-index: 1100;
+    opacity: 0;
+    color: white;
+    background: rgba(0,0,0,0.6);
+    text-decoration: none;
+    
+}
+.texto h3{
+    padding: 3px;
+    color: white;
+    font-size: 25px;
+    background: rgba(127, 140, 141  ,0.7);
+    border-radius: 8px;
+}
+.texto a:hover{
+    background: #1ABC9C;
+}
+.camara:hover{
+    transform: translateY(-145px);
+    transition: transform 0.45s;
+    
+}
+
+.camara:hover .texto a{
+    opacity: 1;
+}
+/*----estilo secction------*/
+
+.bienvenido{
+    width: 100%;
+    position: relative;
+    background: #fff;
+    height: 300px;
+} 
+.contenedor{
+    display: flex;
+    width: 650px;
+    height: 40px;
+    font-size: 40px;
+    line-height: 40px;
+    justify-content: center;
+    
+    
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    
+    overflow: hidden;
+}
+.contenedor p{
+    font-family: 'Poiret One', cursive;
+}
+.contenedor ul{
+    font-family: 'Questrial', sans-serif;
+    list-style: none;
+    padding-left: 10px;
+    animation: cambiar 7s infinite;
+}
+@keyframes cambiar{
+    0%{margin-top:0;}
+    20%{margin-top:0;}
+    
+    25%{margin-top:-40px;}
+    50%{margin-top:-40px;}
+    
+    55%{margin-top:-80px;}
+    80%{margin-top:-80px;}
+}
+.contenedor ul, .contenedor p{
+    margin: 0;
+}
+
+/*-------footer--------*/
+.footer{
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+.nosotros{
+    font-size: 20px;
+}
+.fooder-info{
+    font-family: 'Poiret One', cursive;
+    
+    width: 50%;
+    margin: auto;
+    padding: 50px;
+}
+.footer .social [class^="icon-"]{
+    
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 10px;
+    background: #FE7801;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    line-height: 40px;
+    text-align: center;
+    text-shadow: 2px 2px 10px black;
+}
+
+.social{
+    font-family: 'Poiret One', cursive;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+.contac{
+     display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    
+}
+.contac p{
+    margin: 20px;
+    font-size: 20px;
+}
